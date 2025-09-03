@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+* {
+  font-family: 'Comfortaa', cursive !important;
+}
+html, body, #root {
+  font-family: 'Comfortaa';
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: rgba(20, 22, 25, 0.95);
+  color: #fff;
+  background-attachment: fixed;
+  overflow: visible;
+}
+
+.form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 190px;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: flex;
+  width: 150%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+  align-items: flex-start;
+}
+
+.form-control input:focus,
+.form-control input:not(:placeholder-shown) {
+  outline: 0;
+  border-bottom-color: rgb(255, 255, 255);
+  
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  color: #fff;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:not(:placeholder-shown) + label span {
+  color: rgb(255, 255, 255);
+  transform: translateY(-30px);
+  
+}
+
+.divcadastro {
+
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(0,0,0,0.8)), linear-gradient(90deg, rgba(50,50,50,0.95), rgba(30,30,30,0.95), rgba(10,10,10,0.95));
+}
+
+.consumidorprestador {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.divbotaoSalvar {
+  background-color: transparent;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5vh;
+  margin-top: 0;
+}
+
+#divbotaoSalvar {
+  background-color: transparent;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 0;
+  position: relative;
+  padding-bottom: 5vh;
+}
+
+#botaocadastro:hover {
+  background-color: transparent;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.voltar {
+  background-color: transparent;
+  margin-left: 8px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  font-size: 12px;
+  font-family: 'Comfortaa';
+}
+
+.mapa-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #121212;
+  font-family: 'Comfortaa', cursive;
+  color: white;
+  text-align: center;
+}
+
+.mapa-fake {
+  width: 90%;
+  height: 60%;
+  background: linear-gradient(45deg, #ccc, #eee);
+  border-radius: 12px;
+  margin-bottom: 20px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6f/Google_Maps_screenshot.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.mensagem-erro {
+  opacity: 0;
+  transition: opacity 1s ease;
+  font-size: 1.2rem;
+}
+
+.bodyConstrucao {
+  font-family: 'Comfortaa';
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.30) 100%), linear-gradient(0deg, rgba(99, 57, 8, 0.50) 0%, rgba(99, 57, 8, 0.50) 100%), url(https://cdn.prod.website-files.com/625436eb446946c591a1e808/631255f7dbe79f8028b64f40_Thumbnail%20Post.png);
+  color: #fff;
+  image-rendering: auto;
+  background-attachment: fixed;
+}
+
+.bodyEstetica {
+  font-family: 'Comfortaa';
+  margin: 0;
+  padding: 0;
+  background-image: 
+    linear-gradient(0deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.25) 100%),    
+    linear-gradient(0deg, rgba(76, 30, 89, 0.5) 0%, rgba(76, 30, 89, 0.5) 100%), 
+    url("https://www.awplasticsurgery.com/wp-content/uploads/2023/12/the-5-most-effective-non-surgical-facial-procedures.jpg");
+  background-color: lightgray;
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  image-rendering: auto;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Comfortaa';
+}
+
+.titulo {
+  font-weight: 400;
+  font-size: 3rem;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Comfortaa';
+}
+
+.titulo2 {
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-family: 'Comfortaa';
+}
+.titulo3{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Comfortaa';
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+}
+select {
+  background: transparent;
+  color: white;
+  border-color: transparent;
+  outline: none;
+}
+
+option {
+  background-color: rgba(20, 22, 25, 0.95);
+  color: white;
+  border-color: transparent;
+  outline: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.card {
+  width: 100%;
+  height: 100vh;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: white;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: 'Comfortaa';
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-name {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 8px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'Comfortaa';
+}
+
+.card-info {
+  padding: 12px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Comfortaa';
+  font-size: 14px;
+  text-align: left;
+}
+
+.barra-progresso {
+  background: rgba(255, 255, 255, 0.3);
+  height: 8px;
+  border-radius: 6px;
+  margin: 8px 0;
+  overflow: hidden;
+}
+
+.barra-preenchida {
+  background: rgba(150, 23, 23, 0.7);
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.3s ease;
+}
+
+.carregando {
+  font-size: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-family: 'Comfortaa', cursive;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  position: absolute;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.slider {
+  --width: 100vh;
+  --height: 100vh;
+  --quantity: 3;
+  width: 100%;
+  height: var(--height);
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+}
+
+.slider .list {
+  display: flex;
+  width: 100%;
+  min-width: calc(var(--width) * var(--quantity));
+  position: relative;
+  height: 100%;
+}
+
+.slider .list .item {
+  width: var(--width);
+  height: var(--height);
+  position: relative;
+  top: 0;
+  left: 100%;
+  animation: autoRun 25s linear infinite;
+  transition: filter 0.5s;
+  animation-delay: calc(
+    (10s / var(--quantity)) * (var(--position) - 1) - 10s
+  ) !important;
+}
+
+.slider .list .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(var(--width) * -1);
+  }
+}
+
+.slider:hover .item {
+  animation-play-state: paused !important;
+  filter: grayscale(1);
+}
+
+.slider .item:hover {
+  filter: grayscale(0);
+}
+
+.slider[reverse="true"] .item {
+  animation: reversePlay 10s linear infinite;
+}
+
+@keyframes reversePlay {
+  from {
+    left: calc(var(--width) * -1);
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(45px, auto);
+  gap: 12px 20px;
+  flex: 1 1 60%;
+  overflow: visible;
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  margin-bottom: 5vh;
+}
+
+.form-control:nth-last-child(3) {
+  grid-column: 1;
+}
+
+.form-control:nth-last-child(2) {
+  grid-column: 2;
+}
+
+.divbotaoSalvar {
+  grid-column: 1 / span 2;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 3vh;
+  margin-bottom: 2vh;
+}
